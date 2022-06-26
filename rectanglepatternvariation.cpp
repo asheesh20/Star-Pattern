@@ -1,0 +1,16 @@
+#include<bits/stdc++.h>
+#define ll long long 
+using namespace std;
+void rectanglepatternvariation(ll row,ll col){
+	ll i,j;
+	for(i=1;i<=row;i++){
+		for(j=1;j<=col;j++){
+			if(j<=6-i||j>=4+i) cout<<"*";
+			else cout<<" ";
+		}
+		cout<<endl;
+	}
+}
+int32_t main(){
+	rectanglepatternvariation(5,9);
+}
